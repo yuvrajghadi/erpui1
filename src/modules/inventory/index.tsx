@@ -14,7 +14,8 @@ import { useSearchParams } from 'next/navigation';
 import { getInventoryBreadcrumbItems, getInventorySectionKey } from '@/modules/inventory/config/menu';
 
 // Dashboard
-import InventoryDashboard from './tabs/dashboard/Dashboard';
+// FIXED: Point to the folder where index.tsx is located
+import InventoryDashboard from './tabs/dashboard'; 
 
 // Masters
 import FabricMaster from './tabs/masters/FabricMaster';
@@ -213,23 +214,9 @@ const InventoryModuleContent: React.FC = () => {
   };
 
   return (
-    <div
-      className="inventory-module"
-    >
+    <div className="inventory-module">
       <ModuleBreadcrumb items={getInventoryBreadcrumbItems(activeSection)} />
-      <div
-        style={{padding: 0 }}
-        // title={
-        //   <div className="invn-man">
-        //     <InboxOutlined style={{ fontSize: 20 }} />
-        //     <span style={{ fontSize: 18, fontWeight: 600 }}>
-        //       Inventory Management
-        //     </span>
-        //   </div>
-        // }
-        // style={{ margin: '16px' }}
-        
-      >
+      <div style={{ padding: 0 }}>
         {renderSection()}
       </div>
     </div>
