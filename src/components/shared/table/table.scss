@@ -1,0 +1,234 @@
+.customTable {
+    .ant-table {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+      .ant-table-container {
+        border-radius: 12px;
+        .ant-table-body,
+        .ant-table-content {
+          scrollbar-width: thin;
+          scrollbar-color: #d9d9d9 transparent;
+          scrollbar-gutter: stable;
+          overflow: auto;
+
+          &::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+          }
+
+          &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+          }
+
+          &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+          }
+        }
+      }
+  
+      .ant-table-thead {
+        background-color: #f0f2f5;
+
+        .ant-table-cell {
+          background-color: #f0f2f5;
+          font-weight: 600;
+          color: #333;
+          padding: 12px 16px;
+          border-bottom: 1px solid #e8e8e8;
+
+          &::before {
+            background-color: transparent !important;
+          }
+        }
+      }
+  
+      .ant-table-tbody > tr > td {
+        padding: 12px 16px;
+        border-bottom: 1px solid #f0f0f0;
+      }
+  
+      .ant-table-tbody > tr {
+        transition: all 0.3s ease;
+      }
+  
+      .ant-table-tbody > tr:hover > td {
+        background-color: #f5f5f5 !important;
+      }
+  
+      .ant-table-cell {
+        text-align: left;
+      }
+  
+      .ant-table-row-selected > td {
+        background-color: #e6f7ff !important;
+      }
+  
+      .ant-table .ant-table-action {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 8px;
+        gap: 8px;
+      }
+
+      .ant-avatar {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .ant-tag {
+        border-radius: 4px;
+        padding: 2px 8px;
+        font-weight: 500;
+      }
+
+      .ant-badge-status-text {
+        font-weight: 500;
+      }
+
+      .ant-table-expanded-row > td {
+        background-color: #f9f9f9;
+      }
+
+      .ant-table-placeholder {
+        .ant-table-cell {
+          border-bottom: none;
+        }
+      }
+
+      .ant-table-selection-column {
+        padding: 12px 8px;
+      }
+    }
+  
+    // Active row styling
+    .active-row {
+      background-color: #e6f7ff !important;
+    }
+  
+    // Pagination styling
+    .ant-pagination {
+      margin-top: 20px;
+      text-align: right;
+    }
+  
+    .ant-pagination .ant-pagination-item {
+      border-radius: 6px;
+      border: 1px solid #d9d9d9;
+      background-color: #fff;
+      transition: all 0.3s;
+      
+      &:hover {
+        border-color: #1890ff;
+      }
+    }
+  
+    .ant-pagination .ant-pagination-item-active {
+      background-color: #1890ff;
+      border-color: #1890ff;
+      a {
+        color: #fff;
+      }
+    }
+
+    .ant-pagination-options {
+      .ant-select-selector {
+        border-radius: 6px;
+      }
+    }
+
+    .ant-pagination-prev,
+    .ant-pagination-next {
+      .ant-pagination-item-link {
+        border-radius: 6px;
+        border: 1px solid #d9d9d9;
+        background-color: #fff;
+        transition: all 0.3s;
+
+        &:hover {
+          border-color: #1890ff;
+        }
+      }
+    }
+  }
+  
+.table-container {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  overflow-x: auto;
+
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      h4.ant-typography {
+        margin: 0;
+        color: #262626;
+      }
+
+      .ant-badge-count {
+        box-shadow: 0 2px 8px rgba(24, 144, 255, 0.15);
+      }
+    }
+
+    .ant-space {
+      .ant-input-affix-wrapper {
+        border-radius: 6px;
+        border-color: #d9d9d9;
+        transition: all 0.3s ease;
+        
+        &:hover, &:focus {
+          border-color: #1890ff;
+          box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+        }
+
+        .ant-input-prefix {
+          color: #8c8c8c;
+        }
+      }
+
+      .ant-btn {
+        border-radius: 6px;
+        height: 36px;
+        padding: 0 16px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: translateY(-1px);
+        }
+
+        &.ant-btn-primary {
+          box-shadow: 0 2px 8px rgba(24, 144, 255, 0.15);
+        }
+      }
+    }
+  }
+}
+  
+.ant-dropdown-menu-item {
+  font-size: 13px;
+  padding: 8px 12px;
+}
+
+.ant-dropdown-menu-item-danger {
+  color: #ff4d4f;
+}

@@ -1,0 +1,63 @@
+/**
+ * BarcodeScanInput Component Styles
+ */
+
+.barcode-scan-input {
+  .scan-input-wrapper {
+    position: relative;
+  }
+
+  .scan-input {
+    font-family: 'Courier New', monospace;
+    font-weight: 500;
+    font-size: 16px;
+
+    input {
+      letter-spacing: 1px;
+    }
+
+    &:focus-within {
+      border-color: var(--color-1890ff);
+      box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    }
+  }
+
+  .scanned-barcodes-list {
+    padding: 12px;
+    background: var(--page-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    max-height: 300px;
+    overflow-y: auto;
+
+    .scanned-barcode-tag {
+      font-size: 12px;
+      padding: 4px 8px;
+      margin: 0;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      strong {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// Auto-focus animation
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(24, 144, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgba(24, 144, 255, 0);
+  }
+}
+
+.scan-input:focus-within {
+  animation: pulse 2s infinite;
+}

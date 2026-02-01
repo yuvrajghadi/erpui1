@@ -1,0 +1,311 @@
+/**
+ * Exception-First Table Styling
+ * Global styles for exception-first coloring in inventory tables
+ * 
+ * Rule: Color only exceptions (issues/alerts), keep normal rows neutral
+ */
+
+/* ========================================
+   EXCEPTION ROWS - Critical/High Priority
+   ======================================== */
+
+/* Critical aging (> 90 days) */
+.row-critical,
+.row-critical-aging {
+  background-color: var(--color-fff1f0) !important;
+  border-left: 4px solid var(--color-ff4d4f);
+  transition: background-color 0.3s ease;
+}
+
+.row-critical:hover,
+.row-critical-aging:hover {
+  background-color: var(--color-ffe7ba) !important;
+}
+
+/* Low stock alert */
+.row-low-stock {
+  background-color: var(--color-fff1f0) !important;
+  border-left: 4px solid var(--color-ff4d4f);
+}
+
+.row-low-stock:hover {
+  background-color: var(--color-ffe7ba) !important;
+}
+
+/* Out of stock - critical */
+.row-out-of-stock {
+  background-color: var(--color-fff1f0) !important;
+  border-left: 4px solid var(--color-cf1322);
+  font-weight: 500;
+}
+
+.row-out-of-stock:hover {
+  background-color: var(--color-ffd8bf) !important;
+}
+
+/* Error state (missing data, validation failed) */
+.row-error {
+  background-color: var(--color-fff1f0) !important;
+  border-left: 4px solid var(--color-ff4d4f);
+}
+
+.row-error:hover {
+  background-color: var(--color-ffe7ba) !important;
+}
+
+/* High variance (WIP/FG) */
+.row-high-variance {
+  background-color: var(--color-fff1f0) !important;
+  border-left: 4px solid var(--color-ff4d4f);
+}
+
+.row-high-variance:hover {
+  background-color: var(--color-ffe7ba) !important;
+}
+
+/* ========================================
+   WARNING ROWS - Medium Priority
+   ======================================== */
+
+/* Aging stock (60-90 days) */
+.row-aging,
+.row-warning-aging {
+  background-color: var(--color-fffbf0) !important;
+  border-left: 4px solid var(--color-faad14);
+}
+
+.row-aging:hover,
+.row-warning-aging:hover {
+  background-color: var(--color-fff7e6) !important;
+}
+
+/* Near low stock (within threshold) */
+.row-near-low-stock {
+  background-color: var(--color-fffbf0) !important;
+  border-left: 4px solid var(--color-faad14);
+}
+
+.row-near-low-stock:hover {
+  background-color: var(--color-fff7e6) !important;
+}
+
+/* Warning state (needs review) */
+.row-warning {
+  background-color: var(--color-fffbf0) !important;
+  border-left: 4px solid var(--color-faad14);
+}
+
+.row-warning:hover {
+  background-color: var(--color-fff7e6) !important;
+}
+
+/* Excess stock */
+.row-excess-stock {
+  background-color: var(--color-fffbf0) !important;
+  border-left: 4px solid var(--color-faad14);
+}
+
+.row-excess-stock:hover {
+  background-color: var(--color-fff7e6) !important;
+}
+
+/* Medium variance */
+.row-medium-variance {
+  background-color: var(--color-fffbf0) !important;
+  border-left: 4px solid var(--color-faad14);
+}
+
+.row-medium-variance:hover {
+  background-color: var(--color-fff7e6) !important;
+}
+
+/* ========================================
+   INACTIVE/BLOCKED ROWS
+   ======================================== */
+
+/* Inactive/Disabled items */
+.row-exception-inactive,
+.row-inactive {
+  background-color: var(--color-f5f5f5) !important;
+  border-left: 4px solid var(--color-d9d9d9);
+  color: var(--color-8c8c8c);
+}
+
+.row-exception-inactive:hover,
+.row-inactive:hover {
+  background-color: var(--color-f0f0f0) !important;
+}
+
+/* Dead stock (no movement > 90 days) */
+.row-dead-stock {
+  background-color: var(--color-f5f5f5) !important;
+  border-left: 4px solid var(--color-8c8c8c);
+}
+
+.row-dead-stock:hover {
+  background-color: var(--color-f0f0f0) !important;
+}
+
+/* Blocked stock (quality hold, etc.) */
+.row-blocked {
+  background-color: var(--color-f5f5f5) !important;
+  border-left: 4px solid var(--color-8c8c8c);
+  text-decoration: line-through;
+}
+
+.row-blocked:hover {
+  background-color: var(--color-f0f0f0) !important;
+}
+
+/* ========================================
+   NORMAL ROWS - Neutral (No Special Color)
+   ======================================== */
+
+/* Normal/Good state - NO SPECIAL STYLING */
+/* Keep default table row background */
+.row-normal,
+.row-good {
+  /* Intentionally empty - normal rows should not have special styling */
+}
+
+/* Optional: Success indicators (only when specifically needed) */
+.row-success {
+  /* Only use for specific success states, not normal operation */
+  background-color: var(--color-f6ffed) !important;
+  border-left: 4px solid var(--color-52c41a);
+}
+
+.row-success:hover {
+  background-color: var(--color-d9f7be) !important;
+}
+
+/* ========================================
+   TABLE CELL HIGHLIGHTS
+   ======================================== */
+
+/* Critical cell value (use sparingly) */
+.cell-critical {
+  color: var(--color-ff4d4f);
+  font-weight: 600;
+}
+
+/* Warning cell value */
+.cell-warning {
+  color: var(--color-faad14);
+  font-weight: 500;
+}
+
+/* Neutral cell value */
+.cell-neutral {
+  color: var(--color-8c8c8c);
+}
+
+/* ========================================
+   SPECIAL STATES
+   ======================================== */
+
+/* Pending approval */
+.row-pending {
+  background-color: var(--color-f0f5ff) !important;
+  border-left: 4px solid var(--color-1890ff);
+}
+
+.row-pending:hover {
+  background-color: var(--color-e6f7ff) !important;
+}
+
+/* Reserved/Locked */
+.row-reserved,
+.row-locked {
+  background-color: var(--color-f9f0ff) !important;
+  border-left: 4px solid var(--color-722ed1);
+}
+
+.row-reserved:hover,
+.row-locked:hover {
+  background-color: var(--color-efdbff) !important;
+}
+
+/* WIP aging exceeded */
+.row-wip-delayed {
+  background-color: var(--color-fff1f0) !important;
+  border-left: 4px solid var(--color-ff4d4f);
+}
+
+.row-wip-delayed:hover {
+  background-color: var(--color-ffe7ba) !important;
+}
+
+/* Quality reject */
+.row-quality-reject {
+  background-color: var(--color-fff1f0) !important;
+  border-left: 4px solid var(--color-ff4d4f);
+  opacity: 0.8;
+}
+
+.row-quality-reject:hover {
+  background-color: var(--color-ffe7ba) !important;
+  opacity: 1;
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+@media (max-width: 768px) {
+  /* Reduce border width on mobile */
+  [class*='row-'] {
+    border-left-width: 3px !important;
+  }
+}
+
+/* ========================================
+   DARK MODE SUPPORT (Optional)
+   ======================================== */
+
+@media (prefers-color-scheme: dark) {
+  .row-critical,
+  .row-critical-aging,
+  .row-low-stock,
+  .row-error {
+    background-color: rgba(255, 77, 79, 0.15) !important;
+  }
+
+  .row-aging,
+  .row-warning-aging,
+  .row-warning {
+    background-color: rgba(250, 173, 20, 0.15) !important;
+  }
+
+  .row-inactive,
+  .row-dead-stock {
+    background-color: rgba(140, 140, 140, 0.15) !important;
+  }
+}
+
+/* ========================================
+   USAGE NOTES
+   ======================================== */
+
+/**
+ * How to use in components:
+ * 
+ * <Table
+ *   rowClassName={(record) => {
+ *     // Exception-first: Color only issues
+ *     if (record.agingDays > 90) return 'row-critical-aging';
+ *     if (record.agingDays > 60) return 'row-aging';
+ *     if (record.quantity < record.minStock) return 'row-low-stock';
+ *     if (record.status === 'inactive') return 'row-inactive';
+ *     
+ *     // Normal rows - return empty string (no special styling)
+ *     return '';
+ *   }}
+ * />
+ * 
+ * Priority:
+ * 1. Critical (Red) - Immediate action required
+ * 2. Warning (Orange) - Review/monitor needed
+ * 3. Neutral (Gray) - Inactive/blocked
+ * 4. Normal (No color) - Expected/good state
+ */

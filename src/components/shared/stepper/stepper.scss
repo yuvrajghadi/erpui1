@@ -1,0 +1,81 @@
+.common-stepper {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    padding-block: 2%;
+}
+.ant-steps-item-description {
+    width: 300px !important;
+    max-width: 300px !important;
+}
+.ant-steps-item-content , .ant-steps-item-description{
+    :last-of-type {
+        width: 250px !important;
+    }
+}
+.ant-steps { 
+    border: 1px solid #cccc;
+    border-radius: 36px;
+    padding: 12px 24px !important;
+    background: #fffc;
+    .ant-steps-item-title {
+        line-height: 20px !important;
+    }
+}
+/* stepper.scss */
+
+.stepper-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS devices */
+    padding: 0 10px; /* Optional padding for better visual appearance */
+  }
+  
+  .ant-steps {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure all steps stay in a single row */
+    justify-content: space-between; /* Even spacing between steps */
+  }
+  
+  .ant-steps-item {
+    flex: 0 0 auto; /* Ensure each step has a fixed width */
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .verification-banner-card {
+        h2 {
+            font-size: 21px !important;
+        }
+    }
+    ::-webkit-scrollbar {
+        width: 0.8px !important;
+    }
+    .common-stepper {
+        width: 100% !important;
+    }   
+    /* For mobile view, change to horizontal scrolling */
+    .ant-steps {
+      border-radius: 4px !important;
+      flex-direction: row !important; /* Stack the steps horizontally */
+      overflow-x: auto !important; /* Enable horizontal scroll */
+      padding: 8px 12px !important;
+      width: 100% !important;
+      .ant-steps-vertical {
+        flex-direction: revert !important;
+      }
+    }
+    .ant-steps-item-tail::after {
+        display: inline-block;
+        width: 100%; /* Make sure the line is as wide as the steps */
+        height: 1px;
+        background: rgba(5, 5, 5, 0.06);
+        border-radius: 1px;
+        transition: background 0.3s;
+        content: "";
+    }
+  
+    .ant-steps-item {
+      flex: 0 0 auto; /* Ensure steps do not shrink and are displayed in a row */
+      width: auto; /* Adjust width to the content */
+    }
+  }
+  

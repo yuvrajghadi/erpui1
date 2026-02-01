@@ -1,0 +1,158 @@
+.leave-management-container {
+  padding: 24px;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+
+  .leave-table-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .table-actions-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 0 20px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 16px;
+      }
+
+      .card-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 0;
+
+        @media (max-width: 768px) {
+          margin-bottom: 15px;
+        }
+      }
+
+      .ant-btn-primary {
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+
+    .filters-section {
+      margin-bottom: 20px;
+      padding: 0 20px;
+
+      @media (max-width: 768px) {
+        padding: 0 16px;
+      }
+
+      .filter-controls {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+          width: 100%;
+          gap: 15px;
+        }
+
+        .responsive-select,
+        .responsive-datepicker {
+          width: 150px; /* Default width for select and datepicker */
+
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .leave-table {
+      .ant-table-wrapper {
+        padding: 20px;
+
+        @media (max-width: 768px) {
+          padding: 16px;
+        }
+      }
+
+      .ant-table {
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .ant-table-thead > tr > th {
+        background-color: #f0f2f5;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .ant-table-tbody > tr > td {
+        padding: 12px 16px;
+      }
+
+      .leave-table-row {
+        cursor: pointer;
+
+        &:hover {
+          background-color: #f5f5f5;
+        }
+      }
+
+      .status-tag {
+        font-weight: 500;
+        border-radius: 4px;
+        padding: 4px 8px;
+      }
+    }
+  }
+
+  .leave-modal {
+    .ant-modal-content {
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+      .ant-modal-header {
+        border-bottom: none;
+        padding: 20px 24px 10px;
+      }
+
+      .ant-modal-title {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .ant-modal-body {
+        padding: 10px 24px 20px;
+      }
+
+      .ant-modal-footer {
+        border-top: none;
+        padding: 10px 24px 20px;
+      }
+    }
+
+    .ant-form-item-label > label {
+      font-weight: 500;
+    }
+  }
+
+  // General animated card styling (copied from hr-payroll.scss and attendance.scss to ensure consistency)
+  .animated-card {
+    .ant-card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+} 

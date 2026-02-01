@@ -1,0 +1,172 @@
+.payroll-page-container {
+  padding: 24px;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+
+  .payroll-summary-card,
+  .payroll-table-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    margin-bottom: 24px;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  }
+
+  .statistic-card {
+    .ant-card-body {
+      padding: 20px;
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 575px) {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    .ant-statistic {
+      .ant-statistic-title {
+        font-size: 14px;
+        color: #666;
+      }
+      .ant-statistic-content {
+        font-size: 28px;
+        font-weight: 600;
+      }
+    }
+
+    .icon-large {
+      font-size: 2.5rem;
+      margin-right: 15px;
+      opacity: 0.7;
+
+      @media (max-width: 575px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    .icon-success {
+      color: #52c41a;
+    }
+    .icon-warning {
+      color: #faad14;
+    }
+    .icon-info {
+      color: #0050b3;
+    }
+  }
+
+  .table-actions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 16px;
+    }
+  }
+
+  .filter-generate-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    .filters {
+      display: flex;
+      gap: 10px;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+
+    .responsive-select,
+    .responsive-datepicker {
+      width: 120px; /* Default width for select */
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 10px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+        button {
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  .payroll-table {
+    .ant-table-wrapper {
+      padding: 20px;
+
+      @media (max-width: 768px) {
+        padding: 16px;
+      }
+    }
+
+    .ant-table {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .ant-table-thead > tr > th {
+      background-color: #f0f2f5;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .ant-table-tbody > tr > td {
+      padding: 12px 16px;
+    }
+
+    .payroll-table-row {
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f5f5f5;
+      }
+    }
+  }
+
+  // General animated card styling (copied from hr-payroll.scss and attendance.scss to ensure consistency)
+  .animated-card {
+    .ant-card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+} 

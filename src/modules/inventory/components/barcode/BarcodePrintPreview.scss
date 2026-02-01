@@ -1,0 +1,35 @@
+/**
+ * BarcodePrintPreview Component Styles
+ */
+
+.barcode-print-modal {
+  .ant-modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+}
+
+.barcode-labels-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.barcode-label {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  
+  strong {
+    font-weight: 600;
+  }
+}
+
+@media print {
+  .barcode-print-modal {
+    display: none;
+  }
+  
+  .barcode-labels-container {
+    gap: 0;
+  }
+}

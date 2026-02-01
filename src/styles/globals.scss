@@ -1,0 +1,422 @@
+//Bootstrap Import 
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import './theme-light';
+@import './theme-dark';
+
+*,::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-size: 16px;
+    max-width: 1980px;
+    overflow-x: hidden;
+}
+
+body {
+  background: var(--page-bg);
+  color: var(--text-color);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body[data-theme='dark'] .app-header-responsive {
+  background: var(--page-bg) !important;
+}
+
+.ant-layout {
+  background: var(--page-bg);
+}
+
+.module-breadcrumb {
+  .ant-breadcrumb-link,
+  .ant-breadcrumb-separator {
+    color: var(--breadcrumb-muted);
+  }
+
+  .ant-breadcrumb-link a,
+  .ant-breadcrumb-link span {
+    color: var(--breadcrumb-text);
+  }
+
+  .ant-breadcrumb-item:last-child .ant-breadcrumb-link,
+  .ant-breadcrumb-item:last-child .ant-breadcrumb-link span {
+    color: var(--breadcrumb-active);
+    font-weight: 600;
+  }
+}
+
+// AUtoFill CSS 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.custom-table {
+    .ant-card-body {
+        padding: 0px !important;
+    }
+}
+
+//scrollbar css start here
+
+::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #474748;
+    border-radius: 4px;
+    border: 1px solid #f0f0f0;
+  }
+
+// ===== GLOBAL REQUIRED FIELD ASTERISK STYLING - GUARANTEED TO WORK =====
+// This will force red asterisks on ALL required form fields across the entire application
+
+// Primary method - Target Ant Design form structure
+.ant-form-item-label {
+  > label.ant-form-item-required {
+    position: relative;
+    
+    &::before {
+      display: none !important;
+    }
+    
+    &::after {
+      content: ' *' !important;
+      color: #ff4d4f !important;
+      font-weight: bold !important;
+      display: inline !important;
+      margin-left: 4px !important;
+      font-size: 14px !important;
+    }
+  }
+}
+
+// Secondary method - Force on all required classes
+.ant-form-item-required {
+  &::before {
+    display: none !important;
+  }
+  
+  &::after {
+    content: ' *' !important;
+    color: #ff4d4f !important;
+    font-weight: bold !important;
+    display: inline !important;
+    margin-left: 4px !important;
+    font-size: 14px !important;
+  }
+}
+
+// Third method - Target by form validation
+.ant-form-item {
+  &[class*="required"] .ant-form-item-label > label::after,
+  .ant-form-item-label > label[aria-required="true"]::after {
+    content: ' *' !important;
+    color: #ff4d4f !important;
+    font-weight: bold !important;
+    display: inline !important;
+    margin-left: 4px !important;
+  }
+}
+
+// Fourth method - Ultimate fallback with !important
+.ant-form .ant-form-item .ant-form-item-label > label.ant-form-item-required::after {
+  content: ' *' !important;
+  color: #ff4d4f !important;
+  font-weight: bold !important;
+  display: inline !important;
+  margin-left: 4px !important;
+  font-size: 14px !important;
+}
+
+// Fifth method - By specific field names
+label[for="firstName"]::after,
+label[for="lastName"]::after,
+label[for="companyName"]::after,
+label[for="companyEmail"]::after,
+label[for="companyMobile"]::after,
+label[for="companyGST"]::after,
+label[for="companyType"]::after,
+label[for="industryType"]::after,
+label[for="companyAddress"]::after,
+label[for="country"]::after,
+label[for="state"]::after,
+label[for="city"]::after,
+label[for="pincode"]::after,
+label[for="employees"]::after,
+label[for="planDuration"]::after,
+label[for="services"]::after {
+  content: ' *' !important;
+  color: #ff4d4f !important;
+  font-weight: bold !important;
+  display: inline !important;
+  margin-left: 4px !important;
+  font-size: 14px !important;
+}
+// ===== END GLOBAL REQUIRED FIELD ASTERISK STYLING =====
+
+// Dashboard styles
+.dashboard-container {
+  min-height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard-layout {
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard-content {
+  padding: 80px 16px 0 16px;
+}
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #53627a;
+  }
+
+  ::-webkit-scrollbar {
+  display: none;
+  }
+
+//scrollbar css end here
+
+//dashboard chart card and side nav design start here
+// .ant-layout {
+//     .ant-menu-submenu-open{
+//             .ant-menu-submenu {
+//                 .ant-menu-submenu-title {
+//                     .ant-menu {
+//                         .ant-menu-submenu {
+//                             padding-left: 15px !important;
+//                             .ant-menu-submenu-title {
+//                                 padding-left: 0px !important;
+//                             }
+
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     .ant-layout-sider {
+//         background-color: #06064d !important;
+//         color: #fff !important;
+//         .ant-layout-sider-trigger {
+//             background-color: #06064d !important;
+//             color: #fff !important;
+//         }
+//         ul {
+//             background-color: #06064d !important;
+//             color: #fff !important;
+//             li {
+//                 background-color: #06064d;
+//             }
+//         }
+//     }
+// }
+// .ant-card {
+//     border: 1px solid #cccc !important;
+//     box-shadow: 0 3px 6px rgba(0, 0, 41, .278) !important;
+//     .ant-card-head {
+//         background-color: #f2f2f2 !important;
+//     }
+// }
+// .ant-menu-dark {
+//     .ant-menu-item-selected {
+//         background-color: #ffff !important;
+//         color: #06064d !important;
+//         border-radius: .34em !important;
+//     }
+// } 
+// //dashboard chart card design end here
+
+// //side nav sub menu align start here
+// .ant-layout-sider-children {
+//     .ant-menu {
+//         .ant-menu-submenu {
+//             .ant-menu-sub {
+//                 li {
+//                     padding-left: 36px !important;
+//                 }
+//             }
+//         }
+//     }
+// }
+// //side nav sub menu align end here
+
+// .ant-layout-footer { 
+//     padding: 8px 18px !important;
+// }
+
+// Global Ant Design Form Required Field Asterisk Styling
+.ant-form-item-label {
+  .ant-form-item-required {
+    &::after {
+      color: var(--error-color) !important;
+      content: '*' !important;
+      display: inline !important;
+      margin-left: 4px !important;
+      font-weight: bold !important;
+    }
+    
+    &::before {
+      display: none !important;
+    }
+  }
+}
+
+// Additional global styling for required fields
+.ant-form-item-required::after {
+  color: var(--error-color) !important;
+  font-weight: bold !important;
+}
+
+//side nav sub menu hide
+// .header-left-section {
+//   button {
+//     display: none !important;
+//   }
+// }
+
+  /* Sidebar / logo combination styles */
+  .sidebar {
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      height: 44px !important;
+      margin: 0px !important;
+      border-radius: 8px;
+      color: var(--sidebar-text);
+      font-weight: 700;
+      background: var(--sidebar-logo-bg);
+      box-shadow: var(--sidebar-shadow);
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+
+      img {
+        height: 36px;
+        width: 36px;
+        object-fit: contain;
+        border-radius: 6px;
+        background: transparent;
+        padding: 0;
+      }
+
+      .brand-text {
+        font-size: 14px;
+        color: var(--sidebar-text);
+        letter-spacing: 0.2px;
+      }
+    }
+
+    /* Ensure active item stands out and combines with logo color */
+    > div {
+      // padding: 8px;
+      .anticon {
+        color: var(--sidebar-text);
+      }
+
+      div[style] {
+        &.active,
+        &[data-active='true'] {
+          background: var(--sidebar-active-bg);
+          box-shadow: inset 0 0 0 1px var(--border-color);
+        }
+      }
+    }
+  }
+
+  /* Collapsed sidebar adjustments */
+  .sidebar.is-collapsed {
+    .logo {
+      height: auto !important;
+      margin: 8px 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+
+      img {
+        height: 40px !important;
+        width: 40px !important;
+      }
+
+      .brand-text { display: none; }
+    }
+
+    > div {
+      padding: 6px 0 !important;
+
+      div[style] {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 6px !important;
+        margin-bottom: 6px !important;
+        width: 44px !important;
+        height: 44px !important;
+        border-radius: 8px !important;
+      }
+    }
+  }
+
+  /* Sticky top and scrollable menu inside sidebar */
+  .sidebar {
+    .sidebar-top {
+      position: sticky;
+      top: 12px;
+      z-index: 20;
+      padding: 6px 8px;
+      background: transparent;
+    }
+
+    .sidebar-menu {
+      margin-top: 8px;
+      height: calc(100vh - 80px);
+      overflow-y: auto;
+      padding-right: 6px;
+    }
+  }
+
+  /* Specific rules for sidebar item classes */
+  .sidebar {
+    .sidebar-item {
+      .sidebar-item-label {
+        transition: opacity 0.18s ease, max-width 0.18s ease;
+      }
+    }
+
+    &.is-collapsed {
+      .sidebar-item {
+        justify-content: center;
+        .sidebar-item-label {
+          opacity: 0;
+          max-width: 0;
+          width: 0;
+          overflow: hidden;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .ant-menu-item {
+    .ant-menu-item-selected {
+      width: 70px;
+      margin: 0 auto;
+    }
+  }
+
+  .ant-layout.css-dev-only-do-not-override-ut69n1 {
+    margin-left: 40px !important;
+  }

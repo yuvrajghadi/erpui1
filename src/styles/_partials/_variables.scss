@@ -1,0 +1,61 @@
+//Variable Files
+
+//BASE Colors 
+$black:  #000;
+$white:  #fff;
+$gray:   #ccc;
+$orange:   #d97b11;
+$red: #Ff0000;
+$error: #ff4d4f;
+
+//CSS Display 
+$d-none: none;
+$d-block: block;
+$d-inline-block: inline-block;
+$d-flex: flex;
+$d-inline: inline;
+$d-table: table;
+$d-grid: grid;
+$d-contents: contents;
+$d-inherit: inherit;
+$d-table-cell: table-cell;
+
+//CSS Positions 
+$p-fixed:    fixed;
+$p-absolute: absolute; 
+$p-relative: relative;
+$p-sticky:   sticky;
+$p-static:   static;
+
+//Text Alignment 
+$t-left:   left;
+$t-right:  right;
+$t-center: center;
+
+//Font sizes
+$f-8:  8px;
+$f-10: 10px;
+$f-12: 12px;
+$f-14: 14px;
+$f-16: 16px;    // BASE FONT
+$f-18: 18px;
+$f-20: 20px;
+$f-22: 22px;
+$f-24: 24px;
+$f-26: 26px;
+$f-28: 28px;
+$f-30: 30px;
+$f-32: 32px;
+$f-34: 34px;
+
+//De-Limiter 
+$i: '!important';
+$d: '!default';
+
+//Font Family 
+$f-arial: 'Arial, Helvetica, sans-serif';
+$f-georgia: 'Georgia, serif';
+
+//Height & Width
+$vh-100 : 100vh;
+$pc-100 : 100%;

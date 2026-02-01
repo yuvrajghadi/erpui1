@@ -1,0 +1,683 @@
+/* Admin Dashboard Styles */
+
+/* ==========================================================================
+   Admin Login Styles
+   ========================================================================== */
+
+.admin-login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.admin-login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+.admin-login-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.admin-login-logo h1 {
+  color: var(--color-1890ff);
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.admin-login-logo p {
+  color: var(--text-muted);
+  margin: 5px 0 0 0;
+  font-size: 14px;
+}
+
+.admin-login-form .ant-form-item {
+  margin-bottom: 20px;
+}
+
+.admin-login-form .ant-btn {
+  width: 100%;
+  height: 42px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.admin-login-form .ant-input,
+.admin-login-form .ant-input-affix-wrapper,
+.admin-login-form .ant-input-password {
+  background: var(--input-bg);
+  color: var(--input-text);
+  border-color: var(--border-color);
+}
+
+.admin-login-form .ant-input::placeholder {
+  color: var(--text-muted);
+}
+
+.admin-login-form .ant-input-affix-wrapper input::placeholder {
+  color: var(--text-muted);
+}
+
+.admin-login-form .ant-input-prefix {
+  color: var(--text-muted);
+}
+
+.admin-forgot-password {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.admin-forgot-password a {
+  color: var(--color-1890ff);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.admin-forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Admin Dashboard Layout Styles
+   ========================================================================== */
+
+.admin-dashboard-layout {
+  min-height: 100vh;
+}
+
+.admin-header {
+  background: var(--card-bg);
+  padding: 0 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.admin-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.admin-logo h1 {
+  color: var(--color-1890ff);
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.admin-user-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.admin-user-info:hover {
+  background-color: var(--table-row-hover-bg);
+}
+
+.admin-user-avatar {
+  background: var(--color-1890ff);
+  color: white;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 500;
+}
+
+.admin-sidebar {
+  background: var(--card-bg);
+  border-right: 1px solid var(--border-color);
+}
+
+.admin-content {
+  padding: 24px;
+  background: var(--page-bg);
+  min-height: calc(100vh - 64px);
+}
+
+.admin-content .ant-input,
+.admin-content .ant-input-affix-wrapper,
+.admin-content .ant-select-selector {
+  background: var(--input-bg);
+  color: var(--input-text);
+  border-color: var(--border-color);
+}
+
+.admin-content .ant-input::placeholder {
+  color: var(--text-muted);
+}
+
+.admin-content .ant-input-affix-wrapper input::placeholder {
+  color: var(--text-muted);
+}
+
+.admin-content .ant-select-selection-placeholder {
+  color: var(--text-muted);
+}
+
+.admin-content .ant-select-selection-item {
+  color: var(--input-text);
+}
+
+.admin-content .ant-select-dropdown {
+  background: var(--popup-bg);
+  color: var(--popup-text);
+  border: 1px solid var(--border-color);
+}
+
+.admin-content .ant-select-item {
+  color: var(--popup-text);
+}
+
+/* ==========================================================================
+   Dashboard Stats Cards
+   ========================================================================== */
+
+.dashboard-stats {
+  margin-bottom: 24px;
+}
+
+.dashboard-stats .ant-row {
+  margin: -8px;
+}
+
+.dashboard-stats .ant-col {
+  padding: 8px;
+}
+
+.stats-card {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-color);
+  transition: box-shadow 0.3s ease;
+}
+
+.stats-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stats-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.stats-card-icon.total {
+  background: #e6f7ff;
+  color: #1890ff;
+}
+
+.stats-card-icon.pending {
+  background: var(--color-fff7e6);
+  color: var(--color-fa8c16);
+}
+
+.stats-card-icon.approved {
+  background: var(--color-f6ffed);
+  color: var(--color-52c41a);
+}
+
+.stats-card-icon.rejected {
+  background: var(--color-fff1f0);
+  color: var(--color-ff4d4f);
+}
+
+.stats-card-title {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.stats-card-value {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 4px;
+}
+
+.stats-card-trend {
+  font-size: 12px;
+  color: var(--color-52c41a);
+}
+
+/* ==========================================================================
+   Company Table Styles
+   ========================================================================== */
+
+.companies-table-container {
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-color);
+}
+
+.companies-table-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.companies-table-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.companies-table-filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.companies-table-search {
+  width: 280px;
+}
+
+.companies-table .ant-table {
+  border-radius: 0;
+}
+
+.companies-table .ant-table-thead > tr > th {
+  background: var(--table-header-bg);
+  font-weight: 600;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.companies-table .ant-table-tbody > tr:hover > td {
+  background: var(--table-row-hover-bg);
+}
+
+.status-tag {
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-tag.pending {
+  background: var(--color-fff7e6);
+  color: var(--color-fa8c16);
+  border: 1px solid var(--color-ffd591);
+}
+
+.status-tag.approved {
+  background: var(--color-f6ffed);
+  color: var(--color-52c41a);
+  border: 1px solid var(--color-b7eb8f);
+}
+
+.status-tag.rejected {
+  background: var(--color-fff1f0);
+  color: var(--color-ff4d4f);
+  border: 1px solid var(--color-ffa39e);
+}
+
+.status-tag.under_review {
+  background: var(--color-e6f7ff);
+  color: var(--color-1890ff);
+  border: 1px solid var(--color-91d5ff);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.action-buttons .ant-btn {
+  border-radius: 4px;
+  font-size: 12px;
+  height: 28px;
+  padding: 0 12px;
+}
+
+/* ==========================================================================
+   Modal Styles
+   ========================================================================== */
+
+.company-detail-modal .ant-modal-content {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.company-detail-modal .ant-modal-header {
+  background: var(--table-header-bg);
+  border-bottom: 1px solid var(--border-color);
+  padding: 20px 24px;
+}
+
+.company-detail-modal .ant-modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.company-detail-modal .ant-modal-body {
+  padding: 24px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.company-detail-section {
+  margin-bottom: 24px;
+}
+
+.company-detail-section:last-child {
+  margin-bottom: 0;
+}
+
+.company-detail-section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.company-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.company-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.company-detail-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.company-detail-value {
+  font-size: 14px;
+  color: var(--text-color);
+  word-break: break-word;
+}
+
+.document-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.document-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background: var(--table-header-bg);
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+.document-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.document-icon {
+  color: var(--color-1890ff);
+  font-size: 16px;
+}
+
+.document-details h4 {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.document-details p {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.document-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .admin-content {
+    padding: 16px;
+  }
+  
+  .companies-table-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .companies-table-filters {
+    flex-direction: column;
+  }
+  
+  .companies-table-search {
+    width: 100%;
+  }
+  
+  .dashboard-stats .ant-col {
+    margin-bottom: 16px;
+  }
+  
+  .company-detail-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .document-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  
+  .document-actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-login-card {
+    padding: 24px;
+    margin: 0 16px;
+  }
+  
+  .stats-card-value {
+    font-size: 24px;
+  }
+  
+  .companies-table-container {
+    margin: 0 -16px;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+/* ==========================================================================
+   Dark Mode Support (Optional)
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+  .admin-login-container {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  }
+}
+
+/* ==========================================================================
+   Create Admin Modal Styles
+   ========================================================================== */
+
+.create-admin-modal {
+  .ant-modal-header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 24px 24px 16px;
+  }
+
+  .ant-modal-body {
+    padding: 0 24px 24px;
+  }
+
+  .ant-form-item {
+    margin-bottom: 20px;
+  }
+
+  .ant-form-item-label > label {
+    font-weight: 500;
+    color: var(--text-color);
+  }
+
+  .ant-input-affix-wrapper,
+  .ant-select-selector {
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background: var(--input-bg);
+    color: var(--input-text);
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-color: #40a9ff;
+    }
+
+    &:focus,
+    &.ant-input-affix-wrapper-focused,
+    &.ant-select-focused .ant-select-selector {
+      border-color: #1890ff;
+      box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    }
+  }
+
+  .ant-select-selection-item {
+    display: flex;
+    align-items: center;
+    color: var(--input-text);
+  }
+
+  .ant-select-selection-placeholder {
+    color: var(--text-muted);
+  }
+
+  .ant-input {
+    color: var(--input-text);
+
+    &::placeholder {
+      color: var(--text-muted);
+    }
+  }
+
+  .ant-btn {
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    &.ant-btn-primary {
+      background: #1890ff;
+      border-color: #1890ff;
+
+      &:hover {
+        background: #40a9ff;
+        border-color: #40a9ff;
+      }
+    }
+  }
+
+  .ant-alert {
+    border-radius: 6px;
+    margin-bottom: 16px;
+  }
+}
+
+.create-admin-button {
+  background: linear-gradient(135deg, #1890ff 0%, #096dd9 100%);
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.3);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: linear-gradient(135deg, #40a9ff 0%, #1890ff 100%);
+    box-shadow: 0 4px 12px rgba(24, 144, 255, 0.4);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+  .admin-header,
+  .admin-sidebar,
+  .action-buttons,
+  .companies-table-filters {
+    display: none !important;
+  }
+  
+  .admin-content {
+    padding: 0;
+    background: white;
+  }
+  
+  .companies-table-container {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+}

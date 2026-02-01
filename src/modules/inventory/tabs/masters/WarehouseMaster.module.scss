@@ -1,0 +1,17 @@
+.warehouseMaster {
+  .rackActions {
+    display: flex;
+    gap: 8px;
+  }
+
+  .binPreview {
+    font-size: 12px;
+    color: var(--color-595959);
+  }
+
+  @media (max-width: 768px) {
+    .rackTable {
+      font-size: 12px;
+    }
+  }
+}

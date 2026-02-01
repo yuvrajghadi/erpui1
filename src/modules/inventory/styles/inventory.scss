@@ -1,0 +1,1039 @@
+// Inventory module Ant Design card/table backgrounds
+.inventory-module .ant-card-head,
+.inventory-module .ant-card-body,
+.inventory-module .ant-table {
+  background: var(--card-bg) !important;
+  background-color: var(--card-bg) !important;
+}
+
+.inventory-module .ant-table-thead > tr > th {
+  background: var(--table-header-bg) !important;
+  background-color: var(--table-header-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.inventory-module .ant-table-tbody > tr:nth-child(even) > td {
+  background: var(--table-row-alt-bg);
+}
+
+.inventory-module .ant-table-tbody > tr > td {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+.inventory-module {
+  color: var(--text-color);
+  --inventory-e6f7ff-bg: var(--color-e6f7ff);
+}
+
+.inventory-module .ant-card,
+.inventory-module .ant-card-body,
+.inventory-module .ant-card-head-title {
+  color: var(--text-color);
+}
+
+.inventory-module .ant-card.ant-card-bordered {
+  // border-color: var(--border-color);
+}
+
+.inventory-module .ant-input,
+.inventory-module .ant-input-affix-wrapper,
+.inventory-module .ant-input-number,
+.inventory-module .ant-picker,
+.inventory-module .ant-select-selector,
+.inventory-module .ant-input-textarea-affix-wrapper {
+  background: var(--input-bg) !important;
+  color: var(--input-text) !important;
+  border-color: var(--border-color) !important;
+}
+
+.inventory-module .ant-input::placeholder,
+.inventory-module .ant-input-affix-wrapper input::placeholder,
+.inventory-module .ant-select-selection-placeholder,
+.inventory-module .ant-picker-input > input::placeholder {
+  color: var(--text-muted) !important;
+}
+
+.ant-select-dropdown {
+  background: var(--page-bg) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.ant-select-dropdown .ant-select-item {
+  color: var(--text-color) !important;
+}
+
+.ant-select-dropdown .ant-select-item-option-active,
+.ant-select-dropdown .ant-select-item-option-selected {
+  background: var(--table-row-alt-bg) !important;
+}
+
+.inventory-module .ant-input-disabled,
+.inventory-module .ant-input-affix-wrapper-disabled,
+.inventory-module .ant-input-number-disabled,
+.inventory-module .ant-picker-disabled,
+.inventory-module .ant-select-disabled .ant-select-selector {
+  background: var(--input-disabled-bg) !important;
+  color: var(--text-muted) !important;
+}
+
+.inventory-module .ant-form-item-label > label {
+  color: var(--text-color);
+}
+
+.inventory-module .ant-form-item-explain-error {
+  color: var(--error-color);
+}
+
+.inventory-module .ant-form-item-explain {
+  color: var(--text-muted);
+}
+
+body[data-theme='dark'] .inventory-module .ant-card,
+body[data-theme='dark'] .inventory-module .ant-card-head,
+body[data-theme='dark'] .inventory-module .ant-card-body,
+body[data-theme='dark'] .inventory-module .ant-table,
+body[data-theme='dark'] .inventory-module .ant-table-thead > tr > th,
+body[data-theme='dark'] .inventory-module .ant-table-tbody > tr > td,
+body[data-theme='dark'] .inventory-module .ant-drawer-content,
+body[data-theme='dark'] .inventory-module .ant-drawer-header,
+body[data-theme='dark'] .inventory-module .ant-drawer-body,
+body[data-theme='dark'] .inventory-module .ant-drawer-footer,
+body[data-theme='dark'] .ant-modal .ant-modal-content,
+body[data-theme='dark'] .ant-modal .ant-modal-header ,
+body[data-theme='dark'] .ant-drawer-content .inventory-drawer ,
+body[data-theme='dark'] .ant-drawer .ant-drawer-header,
+body[data-theme='dark'] .ant-drawer .ant-drawer-body,
+body[data-theme='dark'] .ant-drawer .ant-drawer-footer ,
+body[data-theme='dark'] .ant-modal .ant-modal-body,
+body[data-theme='dark'] .inventory-module .ant-modal .ant-modal-footer {
+  background: var(--page-bg) !important;
+  backdrop-filter: blur(20px) !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px !important;
+}
+body[data-theme='dark'] .ant-modal .ant-modal-title,
+body[data-theme='dark'] .ant-modal .ant-modal-body,
+body[data-theme='dark'] .ant-modal .ant-modal-confirm-title,
+body[data-theme='dark'] .ant-modal .ant-modal-confirm-content {
+  color: var(--text-color) !important;
+}
+
+body[data-theme='dark'] .ant-modal .ant-modal-header {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+body[data-theme='dark'] .ant-modal .ant-modal-footer {
+  border-top: 1px solid var(--border-color) !important;
+  background: var(--page-bg) !important;
+}
+
+body[data-theme='dark'] .ant-modal .ant-btn-default {
+  background: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-color) !important;
+}
+
+body[data-theme='dark'] .ant-modal .ant-btn-primary {
+  background: var(--color-1890ff) !important;
+  border-color: var(--color-1890ff) !important;
+  color: var(--color-ffffff) !important;
+}
+
+body[data-theme='dark'] .ant-modal .ant-btn-dangerous {
+  background: transparent !important;
+  border-color: var(--color-ff4d4f) !important;
+  color: var(--color-ff4d4f) !important;
+}
+
+body[data-theme='dark'] .inventory-module {
+  --inventory-e6f7ff-bg: var(--kpi-bg);
+}
+
+body[data-theme='dark'] .ant-picker-dropdown .ant-picker-panel-container,
+body[data-theme='dark'] .ant-picker-dropdown .ant-picker-panel,
+body[data-theme='dark'] .ant-picker-dropdown .ant-picker-header,
+body[data-theme='dark'] .ant-picker-dropdown .ant-picker-body {
+  background: var(--page-bg) !important;
+  background-color: var(--page-bg) !important;
+}
+/*
+  Root wrapper for Inventory module pages
+  - Adds module padding and page background to match app layout
+  - Keeps all cards and tables white using the selectors above
+  - `min-height: calc(100vh - 64px)` accounts for the fixed header height
+*/
+.inventory-module {
+  padding: 16px 0 !important;
+  background-color: var(--page-bg);
+  min-height: calc(100vh - 64px);
+
+  /*
+    Sub-tabs spacing (Masters -> sub navigation)
+    The small sub-tabs row under the main Masters tabs uses Ant's
+    `.ant-tabs-small` + `.ant-tabs-top` structure. Apply 12px gap
+    only for these nested/sub tab rows to avoid affecting global tabs.
+  */
+
+    .ant-tabs.ant-tabs-top.ant-tabs-small {
+      .ant-tabs-nav {
+        .ant-tabs-nav-list {
+          gap: 12px !important;
+        }
+      }
+    }
+
+  /* Keep default tab nav list gap unset here; specific cases below */
+}
+/*
+  Keep cards and tables inside the module white by default.
+  This ensures nested cards/tables used for content remain on white surfaces.
+  We then specifically target the top-level card that directly wraps the
+  module (`.inventory-module > .ant-card`) to use the module background
+  so the page/header area appears unified with `var(--color-f5f5f5)`.
+*/
+.inventory-module .ant-card-head,
+.inventory-module .ant-card-body,
+.inventory-module .ant-table {
+  background: var(--card-bg) !important;
+  background-color: var(--card-bg) !important;
+}
+
+.inventory-module .ant-table-thead > tr > th {
+  background: var(--table-header-bg) !important;
+  background-color: var(--table-header-bg) !important;
+  color: var(--text-color) !important;
+}
+
+/* Top-level card (direct child) should match the module background */
+.inventory-module > .ant-card,
+.inventory-module > .ant-card > .ant-card-head,
+.inventory-module > .ant-card > .ant-card-body {
+  background: var(--page-bg) !important;
+  background-color: var(--page-bg) !important;
+}
+/* Global drawer rules when Drawer is rendered into body (portal) */
+.inventory-drawer .ant-drawer-header-title,
+:where(.css-dev-only-do-not-override-ut69n1).inventory-drawer .ant-drawer-header-title {
+  display: flex;
+  flex-direction: row-reverse !important;
+  align-items: center;
+  width: 100%;
+}
+.inventory-drawer .ant-drawer-footer,
+:where(.css-dev-only-do-not-override-ut69n1).inventory-drawer .ant-drawer-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+
+// Remove border-bottom from Ant Design card head in inventory module
+.inventory-module .ant-card-head {
+  border-bottom: none !important;
+  padding: 0 !important;
+  color: var(--text-color);
+}
+
+.inventory-module > .ant-card .ant-card-head-wrapper {
+  padding-inline: 0 !important;
+}
+
+.invn-man {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+// Remove default margin from Ant Design bordered cards
+.ant-card.ant-card-bordered {
+  margin: 0 !important;
+}
+
+// Add padding to inventory-module (p-3 = 16px)
+.inventory-module {
+  padding: 8px 24px;
+  margin-top: 40px;
+  // Drawer styles - fixed footer and proper header
+  .ant-drawer {
+    .ant-drawer-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--border-color);
+      padding: 16px 24px;
+      
+      .ant-drawer-close {
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        transition: all 0.3s;
+        
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.06);
+        }
+      }
+      
+      .ant-drawer-title {
+        padding-right: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .ant-drawer-header-title {
+        display: flex;
+        flex-direction: row-reverse !important;
+        align-items: center;
+        width: 100%;
+      }
+
+    }
+    
+    .ant-drawer-body {
+      padding: 24px;
+      padding-bottom: 80px;
+      background: var(--card-bg);
+      color: var(--text-color);
+    }
+    
+    .ant-drawer-footer {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      border-top: 1px solid var(--border-color);
+      padding: 16px 24px;
+      background: var(--card-bg);
+      text-align: right;
+      z-index: 10;
+      box-shadow: var(--elevation-shadow);
+      
+      .ant-btn {
+        margin-left: 8px;
+        
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+  }
+}
+
+.inventory-dashboard {
+  padding: 0;
+  background-color: var(--page-bg) !important;
+  min-height: 100vh;
+
+  .ant-row,
+  .ant-col,
+  .ant-space-item,
+  .ant-layout-header {
+    color: var(--text-color);
+    background-color: var(--page-bg) !important;
+  }
+
+  .ant-card,
+  .ant-card-head,
+  .ant-card-body,
+  .ant-table,
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    background: var(--card-bg);
+    background-color: var(--card-bg);
+    color: var(--text-color);
+  }
+
+  // .ant-card-bordered {
+  //   border-color: var(--border-color);
+  // }
+
+  :where([class*='css-dev-only-do-not-override']) .ant-card,
+  :where([class*='css-dev-only-do-not-override']) .ant-card-head,
+  :where([class*='css-dev-only-do-not-override']) .ant-card-body {
+    background: var(--card-bg);
+    background-color: var(--card-bg);
+  }
+  
+  // Header styles
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--text-color);
+    }
+    
+    .header-actions {
+      display: flex;
+      gap: 10px;
+      
+      .search-input {
+        width: 250px;
+      }
+    }
+  }
+  
+  // Tabs styles
+  .dashboard-tabs {
+    margin-bottom: 20px;
+    
+    .ant-tabs-nav {
+      margin-bottom: 16px;
+      .ant-tabs-tab {
+        margin-right: 6px !important;
+        // Increase icon-label gap
+        .anticon {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  
+  // Card styles
+  .dashboard-card {
+    box-shadow: var(--elevation-shadow);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    
+    &:hover {
+      box-shadow: var(--popup-shadow);
+    }
+    
+    .ant-card-head {
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 16px;
+    }
+    
+    .ant-card-body {
+      padding: 16px;
+    }
+  }
+  
+  // Animated cards
+  .animated-card {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  // Statistic card styles
+  .statistic-card {
+    text-align: center;
+    
+    .ant-statistic-title {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    
+    .ant-statistic-content {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    
+    .card-icon {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    
+    &.primary {
+      .card-icon {
+        color: var(--color-1890ff);
+      }
+    }
+    
+    &.success {
+      .card-icon {
+        color: var(--color-52c41a);
+      }
+    }
+    
+    &.warning {
+      .card-icon {
+        color: var(--color-faad14);
+      }
+    }
+    
+    &.danger {
+      .card-icon {
+        color: var(--color-f5222d);
+      }
+    }
+  }
+  
+  // Quick action card styles
+    .quick-action-card {
+    .action-icon {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+    
+    .action-title {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    
+    .action-description {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+  }
+
+  /* Attention cards (What Needs Attention Today) */
+  .attention-wrapper {
+    .attention-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .attention-item {
+      display: flex;
+      align-items: stretch;
+    }
+
+    .attention-accent {
+      width: 10px;
+      border-radius: 6px;
+      margin-right: 12px;
+      flex: 0 0 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .attention-card {
+      flex: 1 1 auto;
+      border-radius: 8px;
+      background: var(--card-bg);
+      padding: 14px;
+      box-shadow: var(--elevation-shadow);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--popup-shadow);
+      }
+
+      .attention-title {
+        font-weight: 700;
+        font-size: 15px;
+        margin-bottom: 8px;
+      }
+
+      .attention-desc {
+        color: var(--text-muted);
+        font-size: 13px;
+        line-height: 1.45;
+        word-break: break-word;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .attention-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .attention-grid {
+        grid-template-columns: 1fr;
+      }
+      .attention-accent {
+        width: 8px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  /* KPI grid - responsive and visually consistent */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .kpi-card {
+    border-radius: 12px;
+    background: var(--kpi-bg) !important;
+    padding: 16px;
+    box-shadow: var(--elevation-shadow);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    border: 1px solid var(--border-color);
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--popup-shadow);
+    }
+
+    .kpi-title {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .kpi-value {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--kpi-text);
+    }
+  }
+
+  // Chart card styles
+  .chart-card {
+    .chart-container {
+      height: 250px;
+      margin-top: 10px;
+    }
+    
+    .custom-tooltip {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: var(--elevation-shadow);
+      
+      .label {
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      
+      .value {
+        margin: 0;
+      }
+    }
+    
+    .custom-legend {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 12px;
+      
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+      }
+      
+      .legend-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+    }
+  }
+  
+  // Table styles
+  .inventory-table {
+    .ant-table-thead > tr > th {
+      background-color: var(--table-header-bg);
+      font-weight: 600;
+    }
+    
+    .ant-table-row:hover {
+      cursor: pointer;
+    }
+  }
+  
+  // Status tag styles
+  .status-tag {
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 12px;
+    
+    &.in-stock {
+      background-color: var(--color-f6ffed);
+      border: 1px solid var(--color-b7eb8f);
+      color: var(--color-52c41a);
+    }
+    
+    &.low-stock {
+      background-color: var(--color-fff7e6);
+      border: 1px solid var(--color-ffd591);
+      color: var(--color-fa8c16);
+    }
+    
+    &.out-of-stock {
+      background-color: var(--color-fff1f0);
+      border: 1px solid var(--color-ffa39e);
+      color: var(--color-f5222d);
+    }
+  }
+  
+  // Progress bar styles
+  .stock-progress {
+    .ant-progress-text {
+      font-size: 12px;
+    }
+  }
+  
+  // List item styles
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  // Card view styles
+  .card-view {
+    .item-card {
+      height: 100%;
+      
+      .item-image {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--input-bg);
+        margin-bottom: 12px;
+        
+        img {
+          max-height: 100%;
+          max-width: 100%;
+        }
+      }
+
+
+      
+      .item-name {
+        font-weight: 600;
+        margin-bottom: 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      
+      .item-sku {
+        font-size: 12px;
+        color: var(--text-muted);
+        margin-bottom: 8px;
+      }
+      
+      .item-details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        
+        .item-price {
+          font-weight: 500;
+        }
+      }
+      
+      .item-actions {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  
+  // Drawer styles
+  .inventory-drawer {
+    .drawer-title {
+      margin-bottom: 20px;
+    }
+    
+    .form-section {
+      margin-bottom: 24px;
+      
+      .section-title {
+        font-weight: 600;
+        margin-bottom: 16px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--border-color);
+      }
+    }
+    
+    .dynamic-form-items {
+      .dynamic-form-item {
+        padding: 16px;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        margin-bottom: 16px;
+        
+        .item-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 16px;
+        }
+      }
+    }
+    
+    .drawer-footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      border-top: 1px solid var(--border-color);
+      padding: 16px 24px;
+      background: var(--card-bg);
+      text-align: right;
+      
+      .ant-btn {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .inventory-drawer .ant-table,
+  .inventory-drawer .ant-table-container,
+  .inventory-drawer .ant-table-content,
+  .inventory-drawer .ant-table-thead > tr > th,
+  .inventory-drawer .ant-table-tbody > tr > td,
+  .inventory-drawer .ant-table-summary > tr > td,
+  .inventory-module .ant-drawer .ant-table,
+  .inventory-module .ant-drawer .ant-table-container,
+  .inventory-module .ant-drawer .ant-table-content,
+  .inventory-module .ant-drawer .ant-table-thead > tr > th,
+  .inventory-module .ant-drawer .ant-table-tbody > tr > td,
+  .inventory-module .ant-drawer .ant-table-summary > tr > td {
+    background: var(--page-bg) !important;
+    background-color: var(--page-bg) !important;
+    border-color: var(--color-e8e8e8) !important;
+  }
+  
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    .dashboard-header {
+      flex-direction: column;
+      align-items: flex-start;
+      
+      .header-actions {
+        margin-top: 16px;
+        width: 100%;
+        
+        .search-input {
+          width: 100%;
+        }
+      }
+    }
+    
+    .statistic-card {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+// Settings styles
+.inventory-settings-content {
+  .settings-card {
+    margin-bottom: 20px;
+  }
+  
+  .coming-soon {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--card-bg);
+    border-radius: 4px;
+  }
+}
+
+body[data-theme='dark'] .inventory-dashboard .kpi-card {
+  background: var(--kpi-bg) !important;
+  border-left: 6px solid var(--color-fafafa) !important;
+}
+
+body[data-theme='dark'] .inventory-dashboard .inventory-dashboard-header .ant-btn {
+  background: transparent !important;
+}
+body[data-theme='dark'] .inventory-dashboard .inventory-dashboard-header {
+  background: var(--page-bg) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+body[data-theme='dark'] .inventory-dashboard .dashboard-view-btn {
+  background: transparent !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-color) !important;
+}
+
+body[data-theme='dark'] .inventory-dashboard .dashboard-view-btn.active,
+body[data-theme='dark'] .inventory-dashboard .dashboard-view-btn.ant-btn-primary {
+  border-color: var(--color-1890ff) !important;
+  box-shadow: 0 0 0 1px var(--color-1890ff) !important;
+}
+
+body[data-theme='dark'] .inventory-dashboard .consumption-total-card {
+  background: var(--kpi-bg) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+body[data-theme='dark'] .job-work-inward-drawer .ant-card,
+body[data-theme='dark'] .job-work-inward-drawer .ant-card-head,
+body[data-theme='dark'] .job-work-inward-drawer .ant-card-body {
+  background: var(--page-bg) !important;
+  background-color: var(--page-bg) !important;
+}
+
+body[data-theme='dark'] .job-work-outward-drawer .ant-card,
+body[data-theme='dark'] .job-work-outward-drawer .ant-card-head,
+body[data-theme='dark'] .job-work-outward-drawer .ant-card-body {
+  background: var(--page-bg) !important;
+  background-color: var(--page-bg) !important;
+}
+
+.job-work-inward-drawer .job-work-inward-card {
+  margin-bottom: 16px !important;
+}
+
+.job-work-inward-drawer .job-work-inward-card:last-child {
+  margin-bottom: 0;
+}
+
+.job-work-outward-drawer .job-work-outward-card {
+  margin-bottom: 16px !important;
+}
+
+.job-work-outward-drawer .job-work-outward-card:last-child {
+  margin-bottom: 0;
+}
+
+.inventory-dashboard .ant-card.ant-card-bordered.ant-card-hoverable {
+  border-radius: 6px !important;
+}
+
+.inventory-dashboard .consumption-summary-card {
+  background: var(--inventory-e6f7ff-bg) !important;
+}
+
+body[data-theme='dark'] .inventory-dashboard .alerts-panel-card {
+  border: 2px solid var(--color-e8e8e8) !important;
+}
+
+body[data-theme='dark'] .inventory-dashboard .alerts-panel-card .ant-card-head {
+  border-bottom: 2px solid var(--color-e8e8e8) !important;
+}
+
+body[data-theme='dark'] .inventory-dashboard .risk-center-card {
+  border: 2px solid var(--color-e8e8e8) !important;
+}
+
+body[data-theme='dark'] .inventory-dashboard .risk-center-card .ant-card-head {
+  border-bottom: 2px solid var(--color-e8e8e8) !important;
+}
+
+.packing-entry .ant-card,
+.packing-entry .ant-card-head,
+.packing-entry .ant-card-body,
+.packing-entry .ant-card.ant-card-bordered {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.packing-entry-drawer .ant-drawer-content,
+.packing-entry-drawer .ant-drawer-header,
+.packing-entry-drawer .ant-drawer-body,
+.packing-entry-drawer .ant-drawer-footer {
+  background: var(--page-bg) !important;
+  background-color: var(--page-bg) !important;
+}
+
+.packing-entry-drawer .ant-drawer-body {
+  padding: 24px !important;
+}
+
+.packing-entry-drawer .ant-card,
+.packing-entry-drawer .ant-card-head,
+.packing-entry-drawer .ant-card-body {
+  background: var(--page-bg) !important;
+  background-color: var(--page-bg) !important;
+}
+
+.packing-entry-drawer .ant-card {
+  border: 1px solid var(--color-e8e8e8) !important;
+  margin-bottom: 16px !important;
+}
+
+.packing-entry-drawer .ant-card:last-child {
+  margin-bottom: 0 !important;
+}
+
+.physical-inventory-drawer .ant-card,
+.physical-inventory-drawer .ant-card-head,
+.physical-inventory-drawer .ant-card-body {
+  background: var(--page-bg) !important;
+  background-color: var(--page-bg) !important;
+}
+
+.physical-inventory-drawer .ant-table,
+.physical-inventory-drawer .ant-table-container,
+.physical-inventory-drawer .ant-table-content,
+.physical-inventory-drawer .ant-table-thead > tr > th,
+.physical-inventory-drawer .ant-table-tbody > tr > td,
+.physical-inventory-drawer .ant-table-summary > tr > td {
+  background: var(--page-bg) !important;
+  background-color: var(--page-bg) !important;
+  border-color: var(--color-e8e8e8) !important;
+}
+      // Also target the dev-only wrapper that Next.js/CSS loader may add
+      :where(.css-dev-only-do-not-override-ut69n1).ant-drawer .ant-drawer-header-title {
+        display: flex;
+        flex-direction: row-reverse !important;
+        align-items: center;
+        width: 100%;
+      }
+
+      /* Remove border for dev-only bordered cards inside inventory module */
+      :where(.css-dev-only-do-not-override-ut69n1).ant-card-bordered {
+        border: 1px solid var(--color-e8e8e8) !important;
+      }
+      :where(.css-dev-only-do-not-override-gotkky).ant-card-bordered {
+        border: 1px solid var(--color-e8e8e8) !important;
+      }
+      :where(.css-dev-only-do-not-override-gotkky).ant-card.ant-card-bordered {
+        border-radius: 8px !important;
+      }
+      :where(.css-dev-only-do-not-override-ut69n1).ant-tabs {
+        padding: 0 !important;
+      }
+
+      :where(.css-dev-only-do-not-override-ut69n1).ant-card .ant-card-body {
+        border-radius: 8px !important;
+      }
+      :where(.css-dev-only-do-not-override-gotkky).ant-card .ant-card-body {
+        border-radius: 8px !important;
+      }
+      .ant-card-head-wrapper {
+        padding-inline: 15px !important;
+      }
+
+      .ant-layout-content {
+        background-color: transparent !important;
+      }
+      .recharts-legend-wrapper {
+        bottom: -20px !important;
+      }
+      :where(.css-dev-only-do-not-override-ut69n1).ant-btn-color-default.ant-btn-variant-dashed {
+        margin-bottom: 12px;
+      }
+      
+.ant-breadcrumb.module-breadcrumb{
+  margin-left: 16px !important;
+}

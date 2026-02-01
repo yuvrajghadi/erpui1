@@ -1,0 +1,140 @@
+// Accounting Dashboard Styles
+
+.accounting-dashboard {
+  padding: 16px;
+  background-color: #f5f5f5;
+  min-height: calc(100vh - 64px);
+
+  .dashboard-header {
+    margin-bottom: 24px;
+    
+    .dashboard-title {
+      margin-bottom: 0;
+      color: #1a1a1a;
+    }
+
+    .search-input {
+      border-radius: 8px;
+    }
+  }
+
+  .dashboard-tabs {
+    // background-color: #fff;
+    // border-radius: 12px;
+    // padding: 16px;
+    // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    .custom-tabs {
+      .ant-tabs-nav {
+        margin-bottom: 16px;
+        .ant-tabs-tab {
+          padding: 8px 16px;
+          border-radius: 8px 8px 0 0;
+          transition: all 0.3s;
+          margin-right: 6px !important;
+          .anticon {
+            margin-right: 8px;
+          }
+          &.ant-tabs-tab-active {
+            background-color: #e6f7ff;
+            border-bottom-color: #e6f7ff;
+            .ant-tabs-tab-btn {
+              color: #1890ff;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      .ant-tabs-content-holder {
+        .ant-tabs-content {
+          .ant-tabs-tabpane {
+            padding: 8px 0;
+          }
+        }
+      }
+    }
+  }
+
+  // Stats Row
+  .stats-row {
+    margin-bottom: 24px;
+  }
+
+  // Charts Row
+  .charts-row {
+    margin-bottom: 24px;
+
+    .dashboard-card {
+      height: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+
+      .ant-card-head {
+        border-bottom: 1px solid #f0f0f0;
+        min-height: 48px;
+
+        .ant-card-head-title {
+          padding: 12px 0;
+        }
+      }
+
+      .ant-card-body {
+        padding: 16px;
+      }
+    }
+
+    .low-stock-summary {
+      .alert-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px dashed #f0f0f0;
+
+        &:last-child {
+          margin-bottom: 0;
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  // Quick Actions Row
+  .quick-actions-row {
+    margin-bottom: 24px;
+  }
+
+  // Tables Row
+  .tables-row {
+    margin-bottom: 24px;
+
+    .enhanced-table {
+      .ant-table {
+        border-radius: 8px;
+        overflow: hidden;
+
+        .ant-table-thead > tr > th {
+          background-color: #fafafa;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .accounting-dashboard {
+    padding: 12px;
+
+    .dashboard-header {
+      margin-bottom: 16px;
+    }
+
+    .dashboard-tabs {
+      padding: 12px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+// Mixins File 
+
+//Backgoround Image 
+@mixin backgroundImage($url, $repeat, $size, $positions){
+    background:$url;
+    background-repeat:$repeat;
+    background-size: $size;
+    background-position: $positions;
+}
+
+//Box Shadow
+@mixin boxShadow($x, $y, $spread, $color){
+    box-shadow:  $x, $y $spread $color;
+}
+
+//Border Radius
+
+//Backgrouind COlor 
+
+// Height and width 
+
+// Transisitons ease-in-out
+
+// Font Styles
